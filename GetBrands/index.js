@@ -4,7 +4,7 @@ const colors = require('colors');
 module.exports = async function (context) {
 
     try {
-
+        console.log("bonnie");
         var pool = await poolPromise;
         var result = await pool.request().query('SELECT * from dbo.families');
         context.res = {
